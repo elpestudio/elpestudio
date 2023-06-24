@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk-alpine
-MAINTAINER resistemasperu.com
-RUN addgroup -S spring && adduser -S spring -G spring
-USER spring:spring
+FROM eclipse-temurin:17-jdk-alpine
+VOLUME /tmp
+COPY target/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 9091
