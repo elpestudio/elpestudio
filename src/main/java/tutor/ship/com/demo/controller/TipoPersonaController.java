@@ -15,7 +15,7 @@ import tutor.ship.com.demo.model.Personas;
 import tutor.ship.com.demo.model.TipoPersona;
 import tutor.ship.com.demo.repository.TipoPersonaRepository;
 
-@CrossOrigin(origins = "http://127.0.0.1:5173")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("api/TipoPersona")
 public class TipoPersonaController {
