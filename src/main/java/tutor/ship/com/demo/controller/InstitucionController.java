@@ -16,7 +16,7 @@ import tutor.ship.com.demo.repository.InstitucionRepository;
 
 @RestController
 @RequestMapping("api/institucion")
-@CrossOrigin(origins = "https://app-gamma-six.vercel.app")
+@CrossOrigin(origins = "https://render-iota.vercel.app")
 public class InstitucionController {
     @Autowired
     private InstitucionRepository institucionRepository;
