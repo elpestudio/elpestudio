@@ -23,7 +23,7 @@ public class PersonaController {
     private PersonaRepository personaRepository;
 
     @GetMapping
-    Page<Personas> index(@PageableDefault(sort = "id", size = 5)Pageable pageable){
+    Page<Personas> index(@PageableDefault(sort = "id", size = 10)Pageable pageable){
         return personaRepository.findAll(pageable);
     }
     @GetMapping("/{id}")

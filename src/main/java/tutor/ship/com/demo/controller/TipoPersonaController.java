@@ -15,15 +15,16 @@ import tutor.ship.com.demo.model.Personas;
 import tutor.ship.com.demo.model.TipoPersona;
 import tutor.ship.com.demo.repository.TipoPersonaRepository;
 
-@CrossOrigin(origins = "http://localhost:4200")
+
 @RestController
 @RequestMapping("api/TipoPersona")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TipoPersonaController {
     @Autowired
     private  TipoPersonaRepository tipoPersonaRepository;
 
     @GetMapping
-    Page<TipoPersona> index(@PageableDefault(sort = "id", size = 5) Pageable pageable){
+    Page<TipoPersona> index(@PageableDefault(sort = "id", size = 10) Pageable pageable){
         return tipoPersonaRepository.findAll(pageable);
     }
 
