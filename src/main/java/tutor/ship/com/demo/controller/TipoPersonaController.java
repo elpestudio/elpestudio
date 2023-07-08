@@ -18,7 +18,7 @@ import tutor.ship.com.demo.repository.TipoPersonaRepository;
 
 @RestController
 @RequestMapping("api/TipoPersona")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://app-gamma-six.vercel.app")
 public class TipoPersonaController {
     @Autowired
     private  TipoPersonaRepository tipoPersonaRepository;

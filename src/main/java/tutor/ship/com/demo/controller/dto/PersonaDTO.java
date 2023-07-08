@@ -11,7 +11,6 @@ import tutor.ship.com.demo.model.TipoPersona;
 @Setter
 public class PersonaDTO {
 
-    @NotBlank
     private TipoPersona tipopersona_id;
 
     @NotBlank
@@ -33,6 +32,5 @@ public class PersonaDTO {
     @NotBlank
     private  String estado;
 
-    @NotBlank
     private Institucion institucion_id;
 }
